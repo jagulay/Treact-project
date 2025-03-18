@@ -34,7 +34,7 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
     padding: 24px 0;
 }
 
@@ -45,6 +45,15 @@ p {
 
 i {
     font-size: 32px;
+}
+
+button {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #6415ff;
+    padding: 16px 24px;
+    border-radius: 40px;
 }
 
 /* Navigation */
@@ -133,12 +142,7 @@ i {
 }
 
 .header__email--btn {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    background-color: #6415ff;
-    padding: 16px 24px;
-    border-radius: 40px;
+    
 }
 
 .header__customers--text {
@@ -223,3 +227,196 @@ i {
 }
 
 
+/* QUALITY */
+
+.quality__container {
+    padding: 96px 0;
+}
+
+.row__quality {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality__description--wrapper {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 24px;
+}
+
+.quality__sub-title {
+    font-weight: 1000;
+}
+
+.quality__para {
+    font-weight: 600;
+    color: grey;
+    text-align: left;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality__img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.quality__btn {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;    
+}
+
+/* STEPS */
+
+.steps__container {
+    padding: 96px 0;
+}
+
+.row__steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+    max-width: 600px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__img {
+    max-width: 600px;
+}
+
+.steps__description--wrapper {
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.steps__sub-title {
+    font-weight: 1000;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+}
+
+.step__number {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.507);
+}
+
+.step__description {
+    padding-left: 24px;
+    width: 80%;
+}
+
+.step__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.step__para {
+    font-size: 24px;
+    font-weight: 600;
+    color: grey;
+}
+
+/* VALUES */
+
+.values__container {
+    padding: 96px 0;
+}
+
+.row__values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.values__description--wrapper {
+    width: 50%;
+    max-width: 600px;
+}
+
+.values__sub-title {
+    font-weight: 1000;
+}
+
+.values__para {
+    font-size: 28px;
+    font-weight: 500;
+    color: grey;
+    padding-bottom: 32px;
+}
+
+.values__list {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.value {
+    padding-right: 24px;
+}
+
+.value__description {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.value__icon {
+    margin-right: 24px;
+}
+
+.fa-dollar-sign {
+    font-size: 40px;
+    color: rgb(80, 216, 173);
+}
+
+.fa-briefcase {
+    font-size: 40px;
+    color: rgb(235, 153, 167);
+}
+
+.value__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.value__para {
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+}
+
+.values__img--wrapper {
+    width: 50%;
+    padding-left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__img {
+    width: 100%;
+    max-width: 600px;
+}
