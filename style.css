@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -27,6 +31,12 @@ nav {
 a {
     text-decoration: none;
     color: black;
+    transition: all 300ms ease;
+    cursor: not-allowed;
+}
+
+a:hover {
+    color: #6415ff;
 }
 
 .purple {
@@ -54,7 +64,13 @@ button {
     color: white;
     background-color: #6415ff;
     padding: 16px 24px;
-    border-radius: 40px;
+    border-radius: 50px;
+    cursor: not-allowed;
+    transition: all 300ms ease;
+}
+
+button:hover {
+    background-color: rgba(80, 17, 204);
 }
 
 /* Navigation */
@@ -95,7 +111,16 @@ button {
     font-size: 24px;
     font-weight: 700;
     padding: 16px 24px;
+}
 
+.nav__link--pricing {
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: #6415ff;
+    transition: all 300ms ease;
 }
 
 .login {
@@ -107,10 +132,16 @@ button {
     background-color: #6415ff;
     padding: 16px 24px;
     border-radius: 40px;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary:hover {
+    background-color: rgba(80, 17, 204);
 }
 
 .nav__link--primary2 {
     color: white;
+    transition: all 300ms ease;
 }
 
 /* Header */
@@ -144,6 +175,10 @@ button {
     border-radius: 40px;
     max-width: 250px;
     width: 60%;
+}
+
+.header__email:hover {
+    border: solid 2px rgba(128, 128, 128, 0.746);
 }
 
 .header__email--btn {
@@ -542,6 +577,12 @@ button {
     width: 70%;
     height: 50%;
     border: none;
+    transition: all 300ms ease;
+}
+
+.plan__btn:hover {
+    translate: 2px -2px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .plan__btn--personal {
@@ -567,6 +608,10 @@ button {
 .plan__btn--business {
     background-color: #f7fafc;
     color: #6415ff;
+}
+
+.plan__btn--business:hover {
+    background-color: #f7fafc;
 }
 
 .plan__enterprise {
@@ -699,4 +744,156 @@ button {
 
 .fa-arrow-left, .fa-arrow-right {
     font-size: 24px;
+}
+
+/* START */
+
+.start__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 96px;
+}
+
+.row__start {
+    background-color: rgb(100, 21, 255);
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px  120px;
+}
+
+.start__header {
+    color: #f7fafc;
+    font-size: 40px;
+    margin-right: 40px;
+}
+
+.start__btn--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.get__started--btn {
+    width: 250px;
+    padding: 30px 40px;
+    font-size: 24px;
+    background-color: #f56565;
+    margin-right: 20px;
+    transition: all 300ms ease;
+}
+
+.get__started--btn:hover {
+    background-color: rgba(229, 62, 62);
+}
+
+.contact__us--btn {
+    width: 250px;
+    padding: 30px 40px;
+    font-size: 24px;
+    border: solid 1px rgb(160, 174, 192);
+    transition: all 300ms ease;
+}
+
+.contact__us--btn:hover {
+    background-color: #f7fafc;
+    color: #6415ff;
+}
+
+/* FOOTER */
+
+.footer__container {
+    background-color: #6415ff;
+    color: #f7fafc;
+    height: 55vh;
+}
+
+.row__footer {
+    max-width: 1400px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.link__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    max-width: fit-content;
+}
+
+.footer__link--title {
+    margin-bottom: 24px;
+}
+
+.footer__link {
+    font-size: 22px;
+    color: #f7fafc;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.footer__link:hover {
+    color: #f7fafc;
+    text-decoration: underline;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    border-top: solid 2px rgb(116, 44, 255);
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer__img {
+    width: 50px;
+    margin-right: 8px;
+}
+
+.footer__logo--text {
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.footer__logo--text {
+    color: #f7fafc;
+}
+
+.copyright {
+    font-size: 24px;
+}
+
+.footer__socials {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-facebook,
+.fa-square-twitter,
+.fa-square-youtube {
+    color: #f7fafc;
+    font-size: 48px;
+}
+
+.fa-facebook:hover,
+.fa-square-twitter:hover,
+.fa-square-youtube:hover {
+    color: #f7fafc9f;
 }
