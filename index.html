@@ -17,28 +17,54 @@
                         <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
                         <div class="nav__logo--title">Treact</div>
                     </div>
-                    <div class="nav__links">
                         <ul class="nav__list">
-                            <li class="nav__link">
-                                <a href="#">About</a>
+                            <li>
+                                <a class="nav__link" href="#">About</a>
                             </li>
-                            <li class="nav__link">
-                                <a href="#">Blog</a>
+                            <li>
+                                <a class="nav__link" href="#">Blog</a>
                             </li>
-                            <li class="nav__link">
-                                <a class="nav__link--pricing" href="#pricing">Pricing</a>
+                            <li>
+                                <a class="nav__link nav__link--pricing" href="#pricing">Pricing</a>
                             </li>
-                            <li class="nav__link">
-                                <a href="#">Contact Us</a>
+                            <li>
+                                <a class="nav__link" href="#">Contact Us</a>
                             </li>
                             <li class="nav__link login">
                                 <a href="#">Login</a>
                             </li>
-                            <li class="nav__link nav__link--primary">
-                                <a href="#" class="nav__link--primary2">Sign Up</a>
+                            <li>
+                                <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                             </li>
                         </ul>
-                    </div>
+                        <button class="btn__menu" onclick="openMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="menu__backdrop">
+                            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <ul class="menu__links">
+                                <li class="menu__list">
+                                    <a href="#" class="menu__link">About</a>
+                                </li>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__link">Blog</a>
+                                </li>
+                                <li class="menu__list">
+                                    <a href="#pricing" class="menu__link menu__link--pricing">Pricing</a>
+                                </li>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__link">Contact Us</a>
+                                </li>
+                                <li class="menu__list">
+                                    <a href="#" class="menu__link">Login</a>
+                                </li>
+                                <li class="menu__list menu__list--primary">
+                                    <a href="#" class="menu__link--primary">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </nav>
