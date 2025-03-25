@@ -1411,6 +1411,12 @@ li {
 }
 
 @media (max-width: 640px) {
+
+    .header__title,
+    .header__description--para {
+        text-align: center;
+    }
+
     .header__email {
         border: none;
         flex-direction: column;
