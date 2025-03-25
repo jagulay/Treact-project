@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -102,7 +105,8 @@ li {
 }
 
 .menu__backdrop {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     background-color: #f7fafc;
     top: 0;
     left: 0;
@@ -116,8 +120,8 @@ li {
     opacity: 0;
 }
 
-.menu--open, .menu__backdrop {
-    visibility: 1;
+.menu--open .menu__backdrop {
+    visibility: visible;
     opacity: 1;
 }
 
@@ -1043,13 +1047,14 @@ li {
     }
 
     .header__description {
-        width: 80%;
+        width: 100%;
         display: flex;
         align-items: center;
+        margin-bottom: 40px;
     }
 
     .header__email {
-        width: 60%;
+        width: 100%;
     }
 
     .header__img--wrapper {
@@ -1144,7 +1149,14 @@ li {
     }
 
     .start__btn--wrapper {
-        width: 50%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .get__started--btn, .contact__us--btn {
+        width: 80%;
     }
 
 }
@@ -1222,6 +1234,19 @@ li {
         flex-direction: column;
         align-items: center;
         margin: 0;
+    }
+
+    .plans__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+    .plan__personal, .plan__enterprise {
+        padding: 0;
     }
 
     .values__description--wrapper,
