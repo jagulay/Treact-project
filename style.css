@@ -143,7 +143,7 @@ li {
 
 .menu__link,
 .menu__link--primary {
-    font-size: 28px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -767,7 +767,7 @@ li {
 }
 
 .testimonials__img {
-    max-width: 600px;
+    width: 100%;
 }
 
 .testimonials__description--wrapper {
@@ -942,7 +942,7 @@ li {
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    max-width: fit-content;
+    width: calc(100%/5);
     padding-bottom: 24px;
 }
 
@@ -951,6 +951,7 @@ li {
     color: #f7fafc;
     font-weight: 500;
     margin-top: 16px;
+    text-align: center;
 }
 
 .footer__link:hover {
@@ -1049,7 +1050,11 @@ li {
     }
 
     .header__email {
-        width: 100%;
+        width: 80%;
+    }
+
+    .header__email--btn {
+        width: 30%;
     }
 
     .header__img--wrapper {
@@ -1080,6 +1085,7 @@ li {
 
     .quality__btn {
         align-self: flex-start;
+        width: 30%;
     }
 
     .quality__sub-title,
@@ -1113,7 +1119,7 @@ li {
     }
 
     .values__btn {
-        width: 50%;
+        width: 30%;
     }
 
     .row__pricing {
@@ -1132,6 +1138,10 @@ li {
         width: 80%;
         padding: 0;
         margin: 40px 0;
+    }
+
+    .plan__btn {
+        width: 50%;
     }
 
     .row__start {
@@ -1156,21 +1166,25 @@ li {
     }
 
     .get__started--btn, .contact__us--btn {
-        width: 80%;
+        width: 30%;
     }
 
-    .footer__info {
-        flex-direction: column;
-        gap: 24px;
+    .footer__logo--wrapper {
+        width: 25%;
+    }
+
+    .footer__logo--text {
+        font-size: 16px;
+        text-wrap: nowrap;
     }
 
     .copyright {
-        width: 100%;
+        width: 50%;
     }
 
     .footer__socials {
-        width: 100%;
-        justify-content: center;
+        width: 25%;
+        justify-content: flex-end;
     }
 
 }
@@ -1184,6 +1198,24 @@ li {
     .feature {
         width: 100%;
         padding: 24px;
+        flex-direction: column;
+        align-items: center;
+   }
+
+   .feature__logo {
+    padding: 0;
+   }
+
+   .feature__wrapper {
+    padding: 24px 0 0 0;
+   }
+
+   .feature__title {
+    text-align: center;
+   }
+
+   .feature__description {
+    text-align: center;
    }
 
    .row__quality,
@@ -1211,7 +1243,6 @@ li {
 
     .quality__btn {
         align-self: center;
-        width: 50%;
     }
 
     .row__steps,
@@ -1266,6 +1297,8 @@ li {
         width: 100%;
     }
 
+    .steps__title,
+    .steps__sub-title,
     .values__sub-title,
     .values__para,
     .value__description,
@@ -1276,18 +1309,18 @@ li {
         text-align: center;
     }
 
+    .value {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
     .testimonials__description--primary,
     .testimonials__description--secondary {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-    }
-
-    .value {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 40px;
     }
 
     .testimonials__img--wrapper {
@@ -1317,12 +1350,19 @@ li {
     
     .user__description {
         width: 100%;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
+    .user__sub-description {
+        padding: 24px 0 0 0;
+        text-align: center;
+    }
+
     .rating__arrows {
         width: 100%;
         justify-content: center;
+        gap: 20px;
     }
 
     .plans__list {
@@ -1341,13 +1381,64 @@ li {
     }
 
     .links {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
     }
     
     .link__list {
-        width: 100%;
         align-items: center;
-        margin-bottom: 32px;
-    }    
+        margin: 0 16px 16px 16px;
+    }  
+
+    .footer__logo,
+    .copyright,
+    .footer__socials {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__logo--text {
+        width: 100%;
+    }
+    
+    .footer__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .header__email {
+        border: none;
+        flex-direction: column;
+    }
+
+    .header__email--input {
+        width: 100%;
+        border: solid 2px rgba(128, 128, 128, 0.178);
+        border-radius: 40px;
+        padding: 16px 16px;
+        margin-bottom: 16px;
+    }
+
+    .header__email--btn {
+        width: 100%;
+    }
+
+    .quality__btn,
+    .values__btn {
+        width: 50%;
+    }
+
+    .pricing__sub-title {
+        text-align: center;
+    }
+
+    .get__started--btn, .contact__us--btn {
+        width: 80%;
+    }
+
 }
