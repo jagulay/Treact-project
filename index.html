@@ -33,7 +33,7 @@
                             <li class="nav__link login">
                                 <a href="#">Login</a>
                             </li>
-                            <li>
+                            <li class=".nav__link primary">
                                 <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                             </li>
                         </ul>
@@ -72,14 +72,14 @@
             <div class="header__description">
                 <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
                 <p class="header__description--para">
-                    Our templates are easy to set up, understand and customize. Fully modular components witha variety of pages and components.
+                    Our templates are easy to set up, understand and customize. Fully modular components with a variety of pages and components.
                 </p>
                 <div class="header__email">
                     <input class="header__email--input" type="email" placeholder="Your email address">
                     <button class="header__email--btn">Get Started</button>
                 </div>
                 <figure class="header__customers">
-                    <div class="header__customers--text">Ours Trusted Customers</div>
+                    <div class="header__customers--text">Our Trusted Customers</div>
                     <img class="header__customers--img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
                 </figure>
             </div>
@@ -89,8 +89,8 @@
         </div>
     </section>
     <section id="features">
-        <div class="row row__features">
-            <div class="container">
+        <div class="container features__container">
+            <div class="row row__features">
                 <div class="features__header">
                     <h2 class="features__title"><span class="purple">FEATURES</span></h2>
                     <h1 class="features__sub-title">We have <span class="purple">Amazing Service.</span></h1>
@@ -156,7 +156,7 @@
         </div>
     </section>
     <section id="quality">
-        <div class="quality__container">
+        <div class="container quality__container">
             <div class="row row__quality">
                 <div class="quality__description--wrapper">
                     <h2 class="quality__title"><span class="purple">QUALITY WORK</span></h2>
@@ -173,7 +173,7 @@
         </div>
     </section>
     <section id="steps">
-        <div class="steps__container">
+        <div class="container steps__container">
             <div class="row row__steps">
                 <div class="steps__img--wrapper">
                     <figure>
@@ -210,7 +210,7 @@
         </div>
     </section>
     <section id="values">
-        <div class="values__container">
+        <div class="container values__container">
             <div class="row row__values">
                 <div class="values__description--wrapper">
                     <h2 class="values__title"><span class="purple">VALUES</span></h2>
@@ -309,40 +309,45 @@
         </div>        
     </section>
     <section id="testimonials">
-        <div class="testimonials__container">
+        <div class="container testimonials__container">
             <div class="row row__testimonials">
                 <figure class="testimonials__img--wrapper">
                     <img class="testimonials__img" src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="">
                 </figure>
                 <div class="testimonials__description--wrapper">
-                    <h2 class="testimonials__title"><span class="purple">TESTIMONIALS</span></h2>
-                    <h1 class="testimonials__sub-title">Our Clients <span class="purple">Love Us.</span></h1>
-                    <p class="testimonials__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis minima dolore quia nihil! Exercitationem quidem voluptatum mollitia impedit. Eius.</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="testimonials__description--primary">
+                        <h2 class="testimonials__title"><span class="purple">TESTIMONIALS</span></h2>
+                        <h1 class="testimonials__sub-title">Our Clients <span class="purple">Love Us.</span></h1>
+                        <p class="testimonials__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veritatis minima dolore quia nihil! Exercitationem quidem voluptatum mollitia impedit. Eius.</p>
                     </div>
-                    <div class="rating__title">Amazing User Experience</div>
-                    <p class="rating__comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, soluta! Facere accusamus eos saepe, mollitia fugit praesentium nihil corporis voluptas nobis incidunt, cumque nemo rerum molestias debitis qui beatae atque?</p>
-                    <div class="rating__nav--bar">
-                        <div class="user__description">
-                            <figure class="user__img--wrapper">
-                                <img class="user__img" src="./assets/photo-1494790108377-be9c29b29330.avif" alt="">
-                            </figure>
-                            <div class="user__sub-description">
-                                <div class="user__name">Charlotte Hale</div>
-                                <div class="user__occupation">Director, Delos Inc.</div>
-                            </div>
+                    <div class="testimonials__description--secondary">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="rating__arrows">
-                            <div class="back__btn">
-                                <a href=""><span class="purple"><i class="fa-solid fa-arrow-left"></i></span></a>
+                        <div class="rating__title">Amazing User Experience</div>
+                        <p class="rating__comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, soluta! Facere accusamus eos saepe, mollitia fugit praesentium nihil corporis voluptas nobis incidunt, cumque nemo rerum molestias debitis qui beatae atque?</p>
+                        <div class="rating__nav--bar">
+                            <div class="user__description">
+                                <figure class="user__img--wrapper">
+                                    <img class="user__img" src="./assets/photo-1494790108377-be9c29b29330.avif" alt="">
+                                </figure>
+                                <div class="user__sub-description">
+                                    <div class="user__name">Charlotte Hale</div>
+                                    <div class="user__occupation">Director, Delos Inc.</div>
+                                </div>
                             </div>
-                            <div class="next__btn">
-                                <a href=""><span class="purple"><i class="fa-solid fa-arrow-right"></i></span></a>
+                            <div class="rating__arrows">
+                                <div class="back__btn">
+                                    <a href=""><span class="purple"><i class="fa-solid fa-arrow-left"></i></span></a>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="next__btn">
+                                    <a href=""><span class="purple"><i class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -351,7 +356,7 @@
         </div>
     </section>
     <section id="start">
-        <div class="start__container">
+        <div class="container start__container">
             <div class="row row__start">
                 <h1 class="start__header">Developers all over the world are happily using Treact.</h1>
                 <div class="start__btn--wrapper">
